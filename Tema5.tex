@@ -1,0 +1,72 @@
+\documentclass[black]{beamer} 
+\usetheme{Berkeley} %tema prezentarii
+\usefonttheme{structureitalicserif} %fontul scrisului
+\usepackage{graphicx} %pentru poze
+\usepackage{lipsum} 
+\usepackage{xcolor} %culori
+\graphicspath{{./imagini/}} %folder imagini
+\usepackage{hyperref} %pentru link-uri
+\title {\textbf {Blockchain}}
+\date{\today}
+\begin{document}
+	\begin{frame}[plain]
+		\maketitle
+	\end{frame}
+	
+	\begin{frame}
+		\begin{center}	
+			\frametitle{\textbf{Cuprins}}
+			\tableofcontents
+		\end{center}
+	\end{frame}
+	\section{Introducere}
+	\begin{frame} 
+		\begin{block}{\textbf{Introducere}}
+			
+			
+			\begin{columns}[onlytextwidth,T]
+				\column{\dimexpr\linewidth-30mm-15mm}
+				Un \textbf{blockchain} este o listă de înregistrări (sau date) în continuă creștere, numite blocuri, care sunt legate și securizate cu ajutorul criptografiei. Ca structură de date, un blockchain este o listă simplu înlănțuită, în care legăturile între elemente se fac prin \textbf{hash}. Astfel, fiecare bloc conține de obicei o legătură către un bloc anterior (un hash al blocului anterior), un \textbf{time stamp} și datele tranzacției.
+				\column{50mm}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=40mm]{imagine1}
+					\caption{Imagini}
+					\label{fig:imagine}
+				\end{figure}
+				
+		\end{columns}
+			\end{block}
+\end{frame}
+\begin{frame}
+	\begin{block}{\textbf{Introducere}}
+		\par
+		Blockchainul este un registru transparent și distribuit care poate înregistra \textbf{tranzacții} între două părți în mod eficient.
+		Acestea sunt securizate prin design și sunt un exemplu de sistem de calcul distribuit cu toleranță ridicată de tip bizantin (toleranță la atacatori sau la calculatoare necooperante). Problema consensului descentralizat a fost prin urmare rezolvată cu ajutorul tehnologiei blockchain. Acest lucru face ca tehnologia blockchain să fie adecvată pentru înregistrarea de evenimente, dosare medicale precum și înregistrarea altor activități de management cum ar fi gestionarea identității, procesarea tranzacțiilor, documentarea provenienței, urmărirea traseului comercial al produselor alimentare sau sisteme de votare.
+	\end{block}
+\end{frame}
+
+\section{Istoria}
+\begin{frame}
+	\begin{block}{\textbf{Istoria}}
+		
+		
+		\begin{columns}[onlytextwidth,T]
+			\column{\dimexpr\linewidth-25mm-9mm}
+			Primul blockchain a fost conceptualizat de Satoshi Nakamoto, în 2008, folosind o metodă care exclude o terță parte autorizată. În 2009 Nakamoto a dezvoltat bitcoin pe baza tehnologiei blockchain, folosită ca registru public pentru tranzacțiile din rețea.
+		   	Blockchain a fost denumit inițial lanț de blocuri.	
+			\column{30mm}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=25mm]{imagine2}
+			\caption[Satoshi Nakamoto]{Satoshi Nakamoto}
+			\label{imagine2}
+		\end{figure}
+		
+			
+			
+		\end{columns}
+	\end{block}
+\end{frame}
+\end{document}
+				
